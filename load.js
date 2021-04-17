@@ -6,7 +6,7 @@ var aboutus = document.getElementById("aboutus");
 var contact = document.getElementById("contact");
 
 home.style.opacity = ("1");
-aboutus.style.opacity = ("0");
-contact.style.opacity = ("0");
+aboutus.style.opacity = ("1");
+contact.style.opacity = ("1");
 
 
