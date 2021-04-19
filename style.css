@@ -328,8 +328,8 @@ nav a:hover{
   height: 100%;
   color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 500%;
+  padding: 5px;
+  font-size: 3rem;
   font-family: 'Arima Madurai', cursive;
 }
 
@@ -362,8 +362,8 @@ nav a:hover{
   height: 100%;
   color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 500%;
+  padding: 5px;
+  font-size: 2rem;
   font-family: 'Arima Madurai', cursive;
 }
 
@@ -372,8 +372,7 @@ nav a:hover{
   height: 50px;
   color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 70px;
+
   font-family: 'Arima Madurai', cursive;
 }
 
