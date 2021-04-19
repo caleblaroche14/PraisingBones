@@ -269,7 +269,6 @@ nav a:hover{
   background-size: cover;            
   background-repeat: no-repeat;
   background-position: center center;   
-  margin: 0px 5px 0px 5px;
 }
 
 #aboutus{
@@ -286,7 +285,6 @@ nav a:hover{
   background-repeat: no-repeat;
   background-position: center center; 
   left: 100vw;
-  margin: 0px 5px 0px 5px;
 }
 
 #contact{
@@ -301,8 +299,7 @@ nav a:hover{
   background-size: cover;            
   background-repeat: no-repeat;
   background-position: center center; 
-  left:200vw;
-  margin: 0px 5px 0px 5px;
+  left:200vw
 }
 
 /* PAGE CONTENT */
@@ -430,7 +427,6 @@ nav a:hover{
   background-size: cover;            
   background-repeat: no-repeat;
   background-position: center center;   
-  margin: 0px 5px 0px 5px;
 }
 #event1body{
   display:flex;
@@ -469,8 +465,7 @@ nav a:hover{
   background: linear-gradient(to right, #000000, #176187);
   background-size: cover;            
   background-repeat: no-repeat;
-  background-position: center center; 
-  margin: 0px 5px 0px 5px;  
+  background-position: center center;   
 }
 #event2body{
   display:flex;
@@ -509,8 +504,7 @@ nav a:hover{
   background: linear-gradient(to right, #000000, #176187);
   background-size: cover;            
   background-repeat: no-repeat;
-  background-position: center center;  
-  margin: 0px 5px 0px 5px; 
+  background-position: center center;   
 }
 #event3body{
   display:flex;
@@ -556,7 +550,7 @@ nav a:hover{
   height: 100%;
   background-color: white;
   color: #176187;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 5px 10px 5px 10px;
   margin: 5px;
 }
@@ -574,5 +568,6 @@ nav a:hover{
   justify-content: center;
   width: 100%;
   height: 100%;
+  margin: 0px 30px 0px 30px;
 }
 
