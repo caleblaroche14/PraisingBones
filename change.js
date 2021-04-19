@@ -23,14 +23,21 @@ home = document.getElementById("home");
 aboutus = document.getElementById("aboutus");
 contact = document.getElementById("contact");
 
+event1 = document.getElementById("event1");
+
 aboutus.style.left = sw + 'px';
 contact.style.left = sw*2 + 'px';
+
+event1.style.top = sh + 'px';
 
 home.width = sw;
 aboutus.width = sw;
 contact.width = sw;
 
+event1.width = sw;
+
 var page = 0;
+var downpage = 0;
 
 // CHANGE PAGES
 function changeright(){
@@ -47,6 +54,11 @@ function changeleft(){
         updatepage(page);
         console.log('changing left: ' + page);
     }
+}
+
+function chagnedown(downpage){
+    godown(downpage);
+    console.log('changing down: ' + downpage);
 }
 
 updatepage();
@@ -115,6 +127,7 @@ function aboutuspage(){
     home.style.transition = ("2s");
     aboutus.style.transition = ("2s");
     contact.style.transition = ("2s");
+    event1.style.transition = ("2s");
 
     console.log(aboutus.style.left)
 }
@@ -144,6 +157,37 @@ function contactpage(){
     contact.style.left = 0 + 'px';
 
     console.log(aboutus.style.left)
+}
+
+// go down
+function godown(dp){
+    home.style.transition = ("2s");
+    aboutus.style.transition = ("2s");
+    contact.style.transition = ("2s");
+    event1.style.transition = ("2s");
+    console.log('going down ' + dp);
+    home.style.top = -sh*2 + 'px';
+    aboutus.style.top = -sh*2 + 'px';
+    contact.style.top = -sh*2 + 'px';
+    ra.style.opacity = ("0");
+    la.style.opacity = ("0");
+    h.style.opacity = ("0");
+    a.style.opacity = ("0");
+    c.style.opacity = ("0");
+
+    if (dp == 0){
+        event1.style.top = 0 + 'px';
+        console.log(event1.style.top);
+    }
+}
+
+function goup(){
+    console.log('going up ');
+    home.style.top = 0 + 'px';
+    aboutus.style.top = 0 + 'px';
+    contact.style.top = 0 + 'px';
+    event1.style.top = sh + 'px';
+    updatepage(page)
 }
 
 function rarrow(x){

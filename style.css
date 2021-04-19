@@ -1,7 +1,9 @@
 html{
     overflow-x: hidden;
     height: 100%;
-    background-color: black;
+    background: -webkit-linear-gradient(left, #000000, #176187);
+    background: -moz-linear-gradient(left, #000000, #176187);
+    background: linear-gradient(to right, #000000, #176187);
 
 }
 
@@ -14,8 +16,6 @@ html,body{
 }
 
 /* TITLE */
-
-
 
 
 #title{
@@ -188,7 +188,7 @@ nav a:hover{
   position: absolute;
   font-family: 'Arima Madurai', cursive;
   font-size: 20px;
-  height: 70vh;
+  height: 50vh;
   width: 30px;
   border-radius: 10px 0 0 10px;
   background-color: rgba(160, 160, 160, .5);
@@ -216,7 +216,7 @@ nav a:hover{
   position: absolute;
   font-family: 'Arima Madurai', cursive;
   font-size: 20px;
-  height: 70vh;
+  height: 50vh;
   width: 30px;
   border-radius: 0px 10px 10px 0px;
   background-color: rgba(160, 160, 160, .5);
@@ -247,7 +247,7 @@ nav a:hover{
   height: 100vh;
   width: 100vw;
   padding: 0;
-  margin: 0;
+  margin: 0px;
 }
 
 .pageimages{
@@ -311,7 +311,6 @@ nav a:hover{
   height: 80vh;
   width: 90vw;
   border-radius: 45px;
-
   overflow: hidden;
 }
 
@@ -324,12 +323,8 @@ nav a:hover{
 }
 
 #homeflex a{
-  width: 100%;
   height: 100%;
-  color: white;
   text-align: center;
-  padding: 5px;
-  font-size: 3rem;
   font-family: 'Arima Madurai', cursive;
 }
 
@@ -362,17 +357,13 @@ nav a:hover{
   height: 100%;
   color: white;
   text-align: center;
-  padding: 5px;
-  font-size: 2rem;
   font-family: 'Arima Madurai', cursive;
 }
 
 #aboutusbody a{
   width: 100%;
-  height: 50px;
   color: white;
   text-align: center;
-
   font-family: 'Arima Madurai', cursive;
 }
 
@@ -411,8 +402,8 @@ nav a:hover{
   height: 100%;
   color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 500%;
+  padding: 5px;
+  font-size: 2rem;
   font-family: 'Arima Madurai', cursive;
 }
 
@@ -421,9 +412,78 @@ nav a:hover{
   height: 50px;
   color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 70px;
   font-family: 'Arima Madurai', cursive;
+}
+
+/* UNDER PAGES */
+
+#event1{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  opacity: 0;
+  background: -webkit-linear-gradient(left, #000000, #176187);
+  background: -moz-linear-gradient(left, #000000, #176187);
+  background: linear-gradient(to right, #000000, #176187);
+  background-size: cover;            
+  background-repeat: no-repeat;
+  background-position: center center;   
+}
+#event1body{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 110px;
+  height: 80vh;
+  width: 90vw;
+  border-radius: 45px;
+  overflow: hidden;
+}
+
+#event1flex{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#event1flex a{
+  height: 100%;
+  text-align: center;
+  font-family: 'Arima Madurai', cursive;
+}
+
+.flexheader{
+  color: white;
+  font-size: 2rem;
+  padding: 5px;
+}
+
+.flexunder{
+  color: white;
+  font-size: 1rem;
+  height: 100%;
+  padding: 5px;
+}
+
+.flexbutton{
+  transition: .3s;
+  font-size: 1.1rem;
+  height: 100%;
+  background-color: white;
+  color: #176187;
+  border-radius: 25px;
+  padding: 5px 10px 5px 10px;
+}
+
+.flexbutton:hover{
+  transition: .3s;
+  cursor: pointer;
+  background-color: #176187;
+  color: white;
 }
 
 .center{
