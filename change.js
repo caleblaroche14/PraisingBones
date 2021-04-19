@@ -24,11 +24,15 @@ aboutus = document.getElementById("aboutus");
 contact = document.getElementById("contact");
 
 event1 = document.getElementById("event1");
+event2 = document.getElementById("event2");
+event3 = document.getElementById("event3");
 
 aboutus.style.left = sw + 'px';
 contact.style.left = sw*2 + 'px';
 
 event1.style.top = sh + 'px';
+event2.style.top = sh*2 + 'px';
+event3.style.top = sh*3 + 'px';
 
 home.width = sw;
 aboutus.width = sw;
@@ -165,10 +169,10 @@ function godown(dp){
     aboutus.style.transition = ("2s");
     contact.style.transition = ("2s");
     event1.style.transition = ("2s");
+    event2.style.transition = ("2s");
+    event3.style.transition = ("2s");
+    
     console.log('going down ' + dp);
-    home.style.top = -sh*2 + 'px';
-    aboutus.style.top = -sh*2 + 'px';
-    contact.style.top = -sh*2 + 'px';
     ra.style.opacity = ("0");
     la.style.opacity = ("0");
     h.style.opacity = ("0");
@@ -176,8 +180,26 @@ function godown(dp){
     c.style.opacity = ("0");
 
     if (dp == 0){
+        home.style.top = -sh*2 + 'px';
+        aboutus.style.top = -sh*2 + 'px';
+        contact.style.top = -sh*2 + 'px';
+
         event1.style.top = 0 + 'px';
         console.log(event1.style.top);
+    }else if(dp == 1){
+        home.style.top = -sh*3 + 'px';
+        aboutus.style.top = -sh*3 + 'px';
+        contact.style.top = -sh*3 + 'px';
+        event1.style.top = -sh + 'px';
+        event2.style.top = 0 + 'px';
+        
+    }else if(dp == 2){
+        home.style.top = -sh*4 + 'px';
+        aboutus.style.top = -sh*4 + 'px';
+        contact.style.top = -sh*4 + 'px';
+        event1.style.top = -sh*2 + 'px';
+        event2.style.top = -sh + 'px';
+        event3.style.top = 0 + 'px';
     }
 }
 
@@ -187,6 +209,8 @@ function goup(){
     aboutus.style.top = 0 + 'px';
     contact.style.top = 0 + 'px';
     event1.style.top = sh + 'px';
+    event2.style.top = sh*2 + 'px';
+    event3.style.top = sh*3 + 'px';
     updatepage(page)
 }
 
