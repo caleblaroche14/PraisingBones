@@ -1,9 +1,16 @@
 // variables 
-sh = window.height;
-sw = document.width;
+var pagenum = 2 // starts at 0
+var sh = window.innerHeight;
+var sw = window.innerWidth;
 
 var ra = document.getElementById('right');
 var la = document.getElementById('left');
+
+ra.style.top = ((sh/2)-ra.offsetHeight/2) + 'px';
+ra.style.right = 0 + 'px';
+
+la.style.top = ((sh/2)-la.offsetHeight/2) + 'px';
+la.style.left = 0 + 'px';
 
 var lt = document.getElementById('lefttext');
 var rt = document.getElementById('righttext');
@@ -27,15 +34,19 @@ var page = 0;
 
 // CHANGE PAGES
 function changeright(){
-    page++;
-    //console.log('changing right: ' + page);
-    updatepage(page);
+    if (page < pagenum){
+        page++;
+        console.log('changing right: ' + page);
+        updatepage(page);
+    }
 }
 
 function changeleft(){
-    page--;
-    updatepage(page);
-    //console.log('changing left: ' + page);
+    if (page > 0){
+        page--;
+        updatepage(page);
+        console.log('changing left: ' + page);
+    }
 }
 
 updatepage();
@@ -55,9 +66,9 @@ function homepage(){
     page = 0;
     lt.innerHTML = "";
     rt.innerHTML = "About Us";
-    home.style.opacity = ("1");
-    aboutus.style.opacity = ("1");
-    contact.style.opacity = ("1");
+    //home.style.opacity = ("1");
+    //aboutus.style.opacity = ("1");
+    //contact.style.opacity = ("1");
 
     h.style.opacity = ("1");
     a.style.opacity = (".3");
@@ -86,9 +97,9 @@ function aboutuspage(){
     a.style.opacity = ("1");
     c.style.opacity = (".3");
 
-    home.style.opacity = ("1");
-    aboutus.style.opacity = ("1");
-    contact.style.opacity = ("1");
+    //home.style.opacity = ("1");
+    //aboutus.style.opacity = ("1");
+    //contact.style.opacity = ("1");
 
     h.style.boxShadow = ("0 0 0px 0px white");
     a.style.boxShadow = ("0 0 10px 1px white");
@@ -113,10 +124,10 @@ function contactpage(){
     lt.innerHTML = "About Us";
     rt.innerHTML = "";
     
-    home.style.opacity = ("1");
-    aboutus.style.opacity = ("1");
-    contact.style.opacity = ("1");
-
+    //home.style.opacity = ("1");
+    //aboutus.style.opacity = ("1");
+    //contact.style.opacity = ("1");
+//
     h.style.opacity = (".3");
     a.style.opacity = (".3");
     c.style.opacity = ("1");
@@ -152,15 +163,23 @@ function larrow(x){
 }
 
 function reportWindowSize(){
+    console.log('screen h/w: ' + sh + ' ' + sw);
+    sh = window.innerHeight;
+    sw = window.innerWidth;
 
-    sh = window.height;
-    sw = window.width;
-    ra.style.top = ((sh/2)-ra.offsetHeight/2) + 'px';
+
+
+    home.width = sw;
+    aboutus.width = sw;
+    contact.width = sw;
+
+    updatepage(page);
+
+    //ra.style.top = ((sh/2)-ra.offsetHeight/2) + 'px';
     ra.style.right = 0 + 'px';
     
-    la.style.top = ((sh/2)-la.offsetHeight/2) + 'px';
+    //la.style.top = ((sh/2)-la.offsetHeight/2) + 'px';
     la.style.left = 0 + 'px';
-
-    console.log('changing sizes');
+    
 }
 window.onresize = reportWindowSize;
