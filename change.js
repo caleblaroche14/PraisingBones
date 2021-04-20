@@ -107,7 +107,7 @@ function homepage(){
 function aboutuspage(){
     page = 1;
     lt.innerHTML = "Home";
-    rt.innerHTML = "Contact";
+    rt.innerHTML = "Contact | Location";
     
     h.style.opacity = (".3");
     a.style.opacity = ("1");
@@ -240,6 +240,17 @@ function reportWindowSize(){
     home.width = sw;
     aboutus.width = sw;
     contact.width = sw;
+    event1.width = sw;
+    event2.width = sw;
+    event3.width = sw;
+
+    home.height = sh;
+    aboutus.height = sh;
+    contact.height = sh;
+    event1.height = sh;
+    event2.height = sh;
+    event3.height = sh;
+
 
     updatepage(page);
 

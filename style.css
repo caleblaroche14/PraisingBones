@@ -1,9 +1,9 @@
 html{
     overflow-x: hidden;
     height: 100%;
-    background: -webkit-linear-gradient(left, #000000, #176187);
-    background: -moz-linear-gradient(left, #000000, #176187);
-    background: linear-gradient(to right, #000000, #176187);
+    background: -webkit-linear-gradient(left, #000000, #166087);
+    background: -moz-linear-gradient(left, #000000, #166087);
+    background: linear-gradient(to right, #000000, #166087);
 
 }
 
@@ -22,7 +22,7 @@ html,body{
   top: 0;
   left: 0;
   display: flex;
-  background-color: rgba(160, 160, 160, .5);
+  background-color: rgba(255, 255, 255, .5);
   width: 100vw;
   height: 80px;
   justify-content: center;
@@ -34,10 +34,10 @@ html,body{
 
 @keyframes titlegradient {
   0%{background-color: rgba(160, 160, 160, 0);}
-  100%{background-color: rgba(160, 160, 160, .5);}
+  100%{background-color: rgba(255, 255, 255, .5);}
 }
 
-#title img{
+#toplogo{
   position: absolute;
   right: 10px;
   object-fit: cover;
@@ -177,7 +177,7 @@ nav a{
 nav a:hover{
   transition: .4s;
   letter-spacing: 5px;
-  background-color: rgba(160, 160, 160, .5);
+  background-color: rgba(255, 255, 255, .5);
 }
 
 /* ARROWS */
@@ -191,12 +191,12 @@ nav a:hover{
   height: 50vh;
   width: 30px;
   border-radius: 10px 0 0 10px;
-  background-color: rgba(160, 160, 160, .5);
+  background-color: rgba(255, 255, 255, .5);
   transition: .3s;
 }
 
 #right:hover{
-  box-shadow: 0 0 20px 2px rgba(160, 160, 160, .5);
+  box-shadow: 0 0 20px 2px rgba(255, 255, 255, .5);
   font-size: 22px;
   cursor: pointer;
   transition: .3s;
@@ -219,7 +219,7 @@ nav a:hover{
   height: 50vh;
   width: 30px;
   border-radius: 0px 10px 10px 0px;
-  background-color: rgba(160, 160, 160, .5);
+  background-color: rgba(255, 255, 255, .5);
   transition: 1s;
 }
 
@@ -230,7 +230,7 @@ nav a:hover{
 }
 
 #left:hover{
-  box-shadow: 0 0 20px 2px rgba(160, 160, 160, .5);
+  box-shadow: 0 0 20px 2px rgba(255, 255, 255, .5);
   font-size: 22px;
   cursor: pointer;
   transition: 1s;
@@ -263,9 +263,9 @@ nav a:hover{
   position: absolute;
   opacity: 0;
   background: #000000;
-  background: -webkit-linear-gradient(left, #000000, #176187);
-  background: -moz-linear-gradient(left, #000000, #176187);
-  background: linear-gradient(to right, #000000, #176187);
+  background: -webkit-linear-gradient(left, #000000, #166087);
+  background: -moz-linear-gradient(left, #000000, #166087);
+  background: linear-gradient(to right, #000000, #166087);
   background-size: cover;            
   background-repeat: no-repeat;
   background-position: center center;   
@@ -278,9 +278,9 @@ nav a:hover{
   align-content: center;
   opacity: 0;
   background: #000000;
-  background: -webkit-linear-gradient(right, #000000, #176187);
-  background: -moz-linear-gradient(right, #000000, #176187);
-  background: linear-gradient(to left, #000000, #176187);
+  background: -webkit-linear-gradient(right, #000000, #166087);
+  background: -moz-linear-gradient(right, #000000, #166087);
+  background: linear-gradient(to left, #000000, #166087);
   background-size: cover;            
   background-repeat: no-repeat;
   background-position: center center; 
@@ -293,9 +293,9 @@ nav a:hover{
   justify-content: center;
   align-content: center;
   opacity: 0;
-  background: -webkit-linear-gradient(left, #000000, #176187);
-  background: -moz-linear-gradient(left, #000000, #176187);
-  background: linear-gradient(to right, #000000, #176187);
+  background: -webkit-linear-gradient(left, #000000, #166087);
+  background: -moz-linear-gradient(left, #000000, #166087);
+  background: linear-gradient(to right, #000000, #166087);
   background-size: cover;            
   background-repeat: no-repeat;
   background-position: center center; 
@@ -421,9 +421,9 @@ nav a:hover{
   align-content: center;
   position: absolute;
   opacity: 0;
-  background: -webkit-linear-gradient(left, #000000, #176187);
-  background: -moz-linear-gradient(left, #000000, #176187);
-  background: linear-gradient(to right, #000000, #176187);
+  background: -webkit-linear-gradient(left, #000000, #166087);
+  background: -moz-linear-gradient(left, #000000, #166087);
+  background: linear-gradient(to right, #000000, #166087);
   background-size: cover;            
   background-repeat: no-repeat;
   background-position: center center;   
@@ -460,9 +460,9 @@ nav a:hover{
   align-content: center;
   position: absolute;
   opacity: 0;
-  background: -webkit-linear-gradient(left, #000000, #176187);
-  background: -moz-linear-gradient(left, #000000, #176187);
-  background: linear-gradient(to right, #000000, #176187);
+  background: -webkit-linear-gradient(left, #000000, #166087);
+  background: -moz-linear-gradient(left, #000000, #166087);
+  background: linear-gradient(to right, #000000, #166087);
   background-size: cover;            
   background-repeat: no-repeat;
   background-position: center center;   
@@ -499,9 +499,9 @@ nav a:hover{
   align-content: center;
   position: absolute;
   opacity: 0;
-  background: -webkit-linear-gradient(left, #000000, #176187);
-  background: -moz-linear-gradient(left, #000000, #176187);
-  background: linear-gradient(to right, #000000, #176187);
+  background: -webkit-linear-gradient(left, #000000, #166087);
+  background: -moz-linear-gradient(left, #000000, #166087);
+  background: linear-gradient(to right, #000000, #166087);
   background-size: cover;            
   background-repeat: no-repeat;
   background-position: center center;   
@@ -549,7 +549,7 @@ nav a:hover{
   font-size: 1.1rem;
   height: 100%;
   background-color: white;
-  color: #176187;
+  color: #166087;
   border-radius: 10px;
   padding: 5px 10px 5px 10px;
   margin: 5px;
@@ -558,7 +558,7 @@ nav a:hover{
 .flexbutton:hover{
   transition: .3s;
   cursor: pointer;
-  background-color: #176187;
+  background-color: #166087;
   color: white;
 }
 
@@ -571,3 +571,17 @@ nav a:hover{
   margin: 0px 30px 0px 30px;
 }
 
+.icons{
+  position: fixed;
+  height:30px;
+  width:30px;
+  top: 35px;
+}
+
+#insta{
+  left: 25px;
+}
+
+#fb{
+  left: 60px;
+}
