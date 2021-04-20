@@ -35,6 +35,8 @@ event1.width = sw;
 var page = 0;
 var downpage = 0;
 
+var isdown = 0;
+
 // CHANGE PAGES
 function changeright(){
     if (page < pagenum){
@@ -87,7 +89,9 @@ function homepage(){
     events.style.left = sw*2 + 'px';
     registration.style.left = sw*3 + 'px';
     founder.style.left = sw*4 + 'px';
-    goup();
+    if (isdown == 1){
+        goup(); 
+    }
     console.log(classes.style.left)
 }
 
@@ -102,7 +106,9 @@ function classespage(){
     registration.style.left = sw*2 + 'px';
     founder.style.left = sw*3 + 'px';
     console.log(classes.style.left)
-    goup();
+    if (isdown == 1){
+        goup(); 
+    }
 }
 
 function eventspage(){
@@ -115,7 +121,9 @@ function eventspage(){
     registration.style.left = sw + 'px';
     founder.style.left = sw*2 + 'px';
     console.log(classes.style.left)
-    goup();
+    if (isdown == 1){
+        goup(); 
+    }
 }
 
 function registrationpage(){
@@ -127,7 +135,9 @@ function registrationpage(){
     events.style.left = -sw + 'px';
     registration.style.left = 0 + 'px';
     founder.style.left = sw + 'px';
-    goup();
+    if (isdown == 1){
+        goup(); 
+    }
 }
 
 function founderpage(){
@@ -139,11 +149,15 @@ function founderpage(){
     events.style.left = -sw*2 + 'px';
     registration.style.left = -sw + 'px';
     founder.style.left = 0 + 'px';
-    goup();
+    if (isdown == 1){
+        goup(); 
+    }
+    
 }
 
 // go down
 function godown(dp){
+    isdown = 1;
     home.style.transition = ("2s");
     classes.style.transition = ("2s");
     events.style.transition = ("2s");
@@ -178,6 +192,7 @@ function godown(dp){
 }
 
 function goup(){
+    isdown = 0;
     console.log('going up ');
     home.style.top = 0 + 'px';
     classes.style.top = 0 + 'px';
