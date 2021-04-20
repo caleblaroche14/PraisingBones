@@ -87,7 +87,7 @@ function homepage(){
     events.style.left = sw*2 + 'px';
     registration.style.left = sw*3 + 'px';
     founder.style.left = sw*4 + 'px';
-
+    goup();
     console.log(classes.style.left)
 }
 
@@ -102,6 +102,7 @@ function classespage(){
     registration.style.left = sw*2 + 'px';
     founder.style.left = sw*3 + 'px';
     console.log(classes.style.left)
+    goup();
 }
 
 function eventspage(){
@@ -114,6 +115,7 @@ function eventspage(){
     registration.style.left = sw + 'px';
     founder.style.left = sw*2 + 'px';
     console.log(classes.style.left)
+    goup();
 }
 
 function registrationpage(){
@@ -125,17 +127,19 @@ function registrationpage(){
     events.style.left = -sw + 'px';
     registration.style.left = 0 + 'px';
     founder.style.left = sw + 'px';
+    goup();
 }
 
 function founderpage(){
     trans();
-
+    
     page = 3;
     home.style.left = -sw*4 + 'px';
     classes.style.left = -sw*3 + 'px';
     events.style.left = -sw*2 + 'px';
     registration.style.left = -sw + 'px';
     founder.style.left = 0 + 'px';
+    goup();
 }
 
 // go down

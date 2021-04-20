@@ -51,7 +51,7 @@ html,body{
   position: absolute;
   right: 10px;
   object-fit: cover;
-  height: 90px;
+  height: 50px;
   animation: rotateicon 20s;
   animation-iteration-count: infinite;
 }
@@ -620,17 +620,14 @@ nav a:hover{
   margin: 0px 30px 0px 30px;
 }
 
-.icons{
+#iconflex{
   position: fixed;
-  height:30px;
-  width:30px;
-  top: 35px;
+  top: 40px;
+  left: 5px;
 }
 
-#insta{
-  left: 25px;
+.icons{
+  height:20px;
 }
 
-#fb{
-  left: 60px;
-}
+
