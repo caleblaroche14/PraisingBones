@@ -1,9 +1,7 @@
 html{
+    overflow-y: scroll;
     overflow-x: hidden;
     height: 100%;
-    background: -webkit-linear-gradient(left, #000000, #166087);
-    background: -moz-linear-gradient(left, #000000, #166087);
-    background: linear-gradient(to right, #000000, #166087);
 
 }
 
@@ -13,8 +11,20 @@ html,body{
     width: 100%;
     background-repeat: no-repeat;
     position:fixed;
+        background: -webkit-linear-gradient(left, #000000, #166087);
+    background: -moz-linear-gradient(left, #000000, #166087);
+    background: linear-gradient(to right, #000000, #166087);
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
 }
 
+@font-face { font-family: Pala; src: url('fonts/PALA.TTF'); } 
 /* TITLE */
 
 
@@ -59,11 +69,11 @@ html,body{
 .titletext{
   transition: .8s;
   text-decoration: none;
-  letter-spacing: 1vw;
+  letter-spacing: .2vw;
   color: white;
   opacity: 1;
   font-size: 7.5vmin;
-  font-family: 'Great Vibes', cursive;
+  font-family: Pala;
 }
 
 #pl{
@@ -154,88 +164,27 @@ html,body{
 nav{
   text-decoration: none;
   display: flex;
-  background-color: purple;
-  height: 60px;
+  background-color: #166087;
+  height: 40px;
   justify-content: center;
   align-items: center;
+  
 }
 
 nav a{
   text-decoration: none;
   transition: .4s;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 5mm;
+  font-family: 'Arima Madurai', cursive;
   color: white;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+  padding:  0px 3px 0px 3px;
+  margin: 0px 2px 0px 2px;
+  cursor:pointer;
 }
 nav a:hover{
   transition: .4s;
-  letter-spacing: 5px;
   background-color: rgba(255, 255, 255, .5);
 }
-
-/* ARROWS */
-#right{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  font-family: 'Arima Madurai', cursive;
-  font-size: 20px;
-  height: 50vh;
-  width: 30px;
-  border-radius: 10px 0 0 10px;
-  background-color: rgba(255, 255, 255, .5);
-  transition: .3s;
-}
-
-#right:hover{
-  box-shadow: 0 0 20px 2px rgba(255, 255, 255, .5);
-  font-size: 22px;
-  cursor: pointer;
-  transition: .3s;
-}
-
-#right a{
-  writing-mode: tb-rl;
-  transform: rotate(-180deg);
-  pointer-events: none;
-  color: white;
-}
-
-#left{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  font-family: 'Arima Madurai', cursive;
-  font-size: 20px;
-  height: 50vh;
-  width: 30px;
-  border-radius: 0px 10px 10px 0px;
-  background-color: rgba(255, 255, 255, .5);
-  transition: 1s;
-}
-
-#left a{
-  writing-mode: tb-rl;
-  transform: rotate(-180deg);
-  color: white;
-}
-
-#left:hover{
-  box-shadow: 0 0 20px 2px rgba(255, 255, 255, .5);
-  font-size: 22px;
-  cursor: pointer;
-  transition: 1s;
-}
-
 
 /* PAGES */
 .pages{
@@ -261,41 +210,61 @@ nav a:hover{
   justify-content: center;
   align-content: center;
   position: absolute;
-  opacity: 0;
-  background: #000000;
-  background: -webkit-linear-gradient(left, #000000, #166087);
-  background: -moz-linear-gradient(left, #000000, #166087);
-  background: linear-gradient(to right, #000000, #166087);
+  opacity: 1;
+
+
   background-size: cover;            
   background-repeat: no-repeat;
   background-position: center center;   
 }
 
-#aboutus{
+#classes{
   position: absolute;
   display: flex;
   justify-content: center;
   align-content: center;
-  opacity: 0;
-  background: #000000;
-  background: -webkit-linear-gradient(right, #000000, #166087);
-  background: -moz-linear-gradient(right, #000000, #166087);
-  background: linear-gradient(to left, #000000, #166087);
+  opacity: 1;
+
+
   background-size: cover;            
   background-repeat: no-repeat;
   background-position: center center; 
   left: 100vw;
 }
 
-#contact{
+#events{
   position: absolute;
   display: flex;
   justify-content: center;
   align-content: center;
-  opacity: 0;
-  background: -webkit-linear-gradient(left, #000000, #166087);
-  background: -moz-linear-gradient(left, #000000, #166087);
-  background: linear-gradient(to right, #000000, #166087);
+  opacity: 1;
+
+  background-size: cover;            
+  background-repeat: no-repeat;
+  background-position: center center; 
+  left:200vw
+}
+
+#registration{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  opacity: 1;
+
+  background-size: cover;            
+  background-repeat: no-repeat;
+  background-position: center center; 
+  left:200vw
+}
+
+#founder{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  opacity: 1;
+  margin-top: 150px;
   background-size: cover;            
   background-repeat: no-repeat;
   background-position: center center; 
@@ -332,7 +301,7 @@ nav a:hover{
   box-shadow: 0px 0px 0px 0px;
 }
 
-#aboutusbody{
+#classesbody{
   display:flex;
   align-items: center;
   justify-content: center;
@@ -340,11 +309,10 @@ nav a:hover{
   height: 80vh;
   width: 90vw;
   border-radius: 45px;
-
   overflow: hidden;
 }
 
-#aboutusflex{
+#classesflex{
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -352,22 +320,19 @@ nav a:hover{
   width: 100%;
 }
 
-#aboutusflex a{
-  width: 100%;
+#classesflex a{
   height: 100%;
-  color: white;
   text-align: center;
   font-family: 'Arima Madurai', cursive;
 }
 
-#aboutusbody a{
-  width: 100%;
-  color: white;
+#classesbody a{
+  height: 100%;
   text-align: center;
   font-family: 'Arima Madurai', cursive;
 }
 
-#contactbody{
+#eventsbody{
   display:flex;
   align-items: center;
   justify-content: center;
@@ -379,7 +344,7 @@ nav a:hover{
   overflow: hidden;
 }
 
-#contactbody a{
+#eventsbody a{
   width: 100%;
   height: 50px;
   color: white;
@@ -388,7 +353,7 @@ nav a:hover{
   font-family: 'Arima Madurai', cursive;
 }
 
-#contactflex{
+#eventsflex{
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -396,7 +361,7 @@ nav a:hover{
   width: 100%;
 }
 
-#contactflex a{
+#eventsflex a{
   width: 100%;
   height: 100%;
   color: white;
@@ -405,7 +370,97 @@ nav a:hover{
   font-family: 'Arima Madurai', cursive;
 }
 
-#contactbody a{
+#eventsbody a{
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: 'Arima Madurai', cursive;
+}
+
+#registrationbody{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 110px;
+  height: 80vh;
+  width: 90vw;
+  border-radius: 45px;
+
+  overflow: hidden;
+}
+
+#registrationbody a{
+  width: 100%;
+  height: 50px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Arima Madurai', cursive;
+}
+
+#registrationflex{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#registrationflex a{
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-family: 'Arima Madurai', cursive;
+}
+
+#registrationbody a{
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: 'Arima Madurai', cursive;
+}
+
+#founderbody{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+  width: 90vw;
+  border-radius: 45px;
+
+  overflow-x: hidden;
+}
+
+#founderbody a{
+  width: 100%;
+  height: 50px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Arima Madurai', cursive;
+}
+
+#founderflex{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#founderflex a{
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-family: 'Arima Madurai', cursive;
+}
+
+#founderbody a{
   width: 100%;
   color: white;
   text-align: center;
@@ -420,10 +475,8 @@ nav a:hover{
   justify-content: center;
   align-content: center;
   position: absolute;
-  opacity: 0;
-  background: -webkit-linear-gradient(left, #000000, #166087);
-  background: -moz-linear-gradient(left, #000000, #166087);
-  background: linear-gradient(to right, #000000, #166087);
+  opacity: 1;
+
   background-size: cover;            
   background-repeat: no-repeat;
   background-position: center center;   
@@ -436,7 +489,7 @@ nav a:hover{
   height: 80vh;
   width: 90vw;
   border-radius: 45px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #event1flex{
@@ -459,10 +512,8 @@ nav a:hover{
   justify-content: center;
   align-content: center;
   position: absolute;
-  opacity: 0;
-  background: -webkit-linear-gradient(left, #000000, #166087);
-  background: -moz-linear-gradient(left, #000000, #166087);
-  background: linear-gradient(to right, #000000, #166087);
+  opacity: 1;
+
   background-size: cover;            
   background-repeat: no-repeat;
   background-position: center center;   
@@ -498,10 +549,8 @@ nav a:hover{
   justify-content: center;
   align-content: center;
   position: absolute;
-  opacity: 0;
-  background: -webkit-linear-gradient(left, #000000, #166087);
-  background: -moz-linear-gradient(left, #000000, #166087);
-  background: linear-gradient(to right, #000000, #166087);
+  opacity: 1;
+
   background-size: cover;            
   background-repeat: no-repeat;
   background-position: center center;   
